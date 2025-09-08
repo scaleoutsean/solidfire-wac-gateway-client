@@ -54,61 +54,35 @@ SYNTAX
 
 ```
 
-## Getting Started
+## Getting started
 
 - Deploy [SolidFire WAC Gateway](https://github.com/scaleoutsean/solidfire-wac-gateway) on IIS on Windows Server 2025 (with .NET 8)
 - Use SolidFire WAC Gateway CLI module to access the gateway 
 
-## Documentation for API Endpoints
+## Documentation for cmdlets
 
-All URIs are relative to */*
+- [Clear-DeletedVolume.md](./docs/Clear-DeletedVolume.md)
+- [Get-AccountEfficiency.md](./docs/Get-AccountEfficiency.md)
+- [Get-ClusterCapacity.md](./docs/Get-ClusterCapacity.md)
+- [Get-ClusterInfo.md](./docs/Get-ClusterInfo.md)
+- [Get-ClusterPerformance.md](./docs/Get-ClusterPerformance.md)
+- [Get-GroupSnapshot.md](./docs/Get-GroupSnapshot.md)
+- [Get-QoPolicy.md](./docs/Get-QoPolicy.md)
+- [Get-Snapshot.md](./docs/Get-Snapshot.md)
+- [Get-Volume.md](./docs/Get-Volume.md)
+- [Get-VolumeStat.md](./docs/Get-VolumeStat.md)
+- [Invoke-ModifyVolume.md](./docs/Invoke-ModifyVolume.md)
+- [Invoke-WhoAmI.md](./docs/Invoke-WhoAmI.md)
+- [New-GroupSnapshot.md](./docs/New-GroupSnapshot.md)
+- [New-Snapshot.md](./docs/New-Snapshot.md)
+- [New-Volume.md](./docs/New-Volume.md)
+- [README.md](./docs/README.md)
+- [Remove-QoPolicy.md](./docs/Remove-QoPolicy.md)
+- [Remove-Volume.md](./docs/Remove-Volume.md)
+- [Set-QoPolicy.md](./docs/Set-QoPolicy.md)
+- [SolidFireWacGateway.md](./docs/SolidFireWacGateway.md)
 
-Class | Method | HTTP request | Description
------------- | ------------- | ------------- | -------------
-*AccountsApi* | [**solid_fire_cluster_accounts_efficiency_get**](docs/AccountsApi.md#solid_fire_cluster_accounts_efficiency_get) | **GET** /SolidFire/{cluster}/accounts/efficiency | 
-*AccountsApi* | [**solid_fire_cluster_accounts_volumestats_get**](docs/AccountsApi.md#solid_fire_cluster_accounts_volumestats_get) | **GET** /SolidFire/{cluster}/accounts/volumestats | 
-*ClusterStatsApi* | [**solid_fire_cluster_clusterstats_capacity_get**](docs/ClusterStatsApi.md#solid_fire_cluster_clusterstats_capacity_get) | **GET** /SolidFire/{cluster}/clusterstats/capacity | 
-*ClusterStatsApi* | [**solid_fire_cluster_clusterstats_performance_get**](docs/ClusterStatsApi.md#solid_fire_cluster_clusterstats_performance_get) | **GET** /SolidFire/{cluster}/clusterstats/performance | 
-*DiagApi* | [**diag_whoami_get**](docs/DiagApi.md#diag_whoami_get) | **GET** /Diag/whoami | 
-*QosApi* | [**solid_fire_cluster_qospolicies_get**](docs/QosApi.md#solid_fire_cluster_qospolicies_get) | **GET** /SolidFire/{cluster}/qospolicies | 
-*QosApi* | [**solid_fire_cluster_qospolicies_policy_id_delete**](docs/QosApi.md#solid_fire_cluster_qospolicies_policy_id_delete) | **DELETE** /SolidFire/{cluster}/qospolicies/{policyID} | 
-*QosApi* | [**solid_fire_cluster_qospolicies_policy_id_get**](docs/QosApi.md#solid_fire_cluster_qospolicies_policy_id_get) | **GET** /SolidFire/{cluster}/qospolicies/{policyID} | 
-*QosApi* | [**solid_fire_cluster_qospolicies_policy_id_put**](docs/QosApi.md#solid_fire_cluster_qospolicies_policy_id_put) | **PUT** /SolidFire/{cluster}/qospolicies/{policyID} | 
-*SnapshotApi* | [**solid_fire_cluster_snapshots_group_list_post**](docs/SnapshotApi.md#solid_fire_cluster_snapshots_group_list_post) | **POST** /SolidFire/{cluster}/snapshots/group/list | 
-*SnapshotApi* | [**solid_fire_cluster_snapshots_group_post**](docs/SnapshotApi.md#solid_fire_cluster_snapshots_group_post) | **POST** /SolidFire/{cluster}/snapshots/group | 
-*SnapshotApi* | [**solid_fire_cluster_snapshots_list_post**](docs/SnapshotApi.md#solid_fire_cluster_snapshots_list_post) | **POST** /SolidFire/{cluster}/snapshots/list | 
-*SnapshotApi* | [**solid_fire_cluster_snapshots_post**](docs/SnapshotApi.md#solid_fire_cluster_snapshots_post) | **POST** /SolidFire/{cluster}/snapshots | 
-*SolidFireApi* | [**solid_fire_cluster_clusterinfo_get**](docs/SolidFireApi.md#solid_fire_cluster_clusterinfo_get) | **GET** /SolidFire/{cluster}/clusterinfo | 
-*SolidFireApi* | [**solid_fire_cluster_listvolumesforaccount_get**](docs/SolidFireApi.md#solid_fire_cluster_listvolumesforaccount_get) | **GET** /SolidFire/{cluster}/listvolumesforaccount | 
-*VolumesApi* | [**solid_fire_cluster_volumes_delete**](docs/VolumesApi.md#solid_fire_cluster_volumes_delete) | **DELETE** /SolidFire/{cluster}/volumes | 
-*VolumesApi* | [**solid_fire_cluster_volumes_foraccount_get**](docs/VolumesApi.md#solid_fire_cluster_volumes_foraccount_get) | **GET** /SolidFire/{cluster}/volumes/foraccount | 
-*VolumesApi* | [**solid_fire_cluster_volumes_post**](docs/VolumesApi.md#solid_fire_cluster_volumes_post) | **POST** /SolidFire/{cluster}/volumes | 
-*VolumesApi* | [**solid_fire_cluster_volumes_purge_post**](docs/VolumesApi.md#solid_fire_cluster_volumes_purge_post) | **POST** /SolidFire/{cluster}/volumes/purge | 
-*VolumesApi* | [**solid_fire_cluster_volumes_put**](docs/VolumesApi.md#solid_fire_cluster_volumes_put) | **PUT** /SolidFire/{cluster}/volumes | 
-
-## Documentation For Models
-
- - [ClusterInfo](docs/ClusterInfo.md)
- - [ClusterInfoResponse](docs/ClusterInfoResponse.md)
- - [ClusterInfoResult](docs/ClusterInfoResult.md)
- - [CreateGroupSnapshotParams](docs/CreateGroupSnapshotParams.md)
- - [CreateSnapshotParams](docs/CreateSnapshotParams.md)
- - [CreateVolumeParams](docs/CreateVolumeParams.md)
- - [CreateVolumeResponse](docs/CreateVolumeResponse.md)
- - [CreateVolumeResult](docs/CreateVolumeResult.md)
- - [DeleteVolumeParams](docs/DeleteVolumeParams.md)
- - [ListSnapshotsParams](docs/ListSnapshotsParams.md)
- - [ModifyQoSPolicyParams](docs/ModifyQoSPolicyParams.md)
- - [ModifyVolumeParams](docs/ModifyVolumeParams.md)
- - [ModifyVolumeResponse](docs/ModifyVolumeResponse.md)
- - [ModifyVolumeResult](docs/ModifyVolumeResult.md)
- - [PurgeDeletedVolumeParams](docs/PurgeDeletedVolumeParams.md)
- - [PurgeDeletedVolumeResponse](docs/PurgeDeletedVolumeResponse.md)
- - [Qos](docs/Qos.md)
- - [QosUpdate](docs/QosUpdate.md)
- - [Volume](docs/Volume.md)
-
-## Documentation For Authorization
+## Documentation for authentiation and authorization 
 
 All endpoints do not require authorization because [SolidFire WAC Gateway](https://github.com/scaleoutsean/solidfire-wac-gateway) uses IIS-integrated authentication.
 
