@@ -1,6 +1,6 @@
 # SolidFire WAC Gateway Client
 
-SolidFire WAC Gateway module for PowerShell (SolidFireWacGateway.psm1) lets you easily and securely achieve multi-tenancy in Microsoft Windows environments with SolidFire.
+SolidFire WAC Gateway Client is a module for PowerShell (SolidFireWacGateway.psm1) that lets you easily and securely achieve multi-tenancy in Microsoft Windows environments with SolidFire.
 
 It does that by using SolidFire WAC Gateway, which performs authorization and limits SolidFire APIs exposed to users.
 

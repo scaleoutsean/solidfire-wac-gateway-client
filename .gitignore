@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
 
 # Include this
+!LICENSE
 !swagger.json # swagger from SolidFire WAC Gateway
 !SolidFireWacGateway.psm1 # (main module)
 !SolidFireWacGateway.psd1 # (module manifest)
