@@ -1,0 +1,11 @@
+# Byte-compiled / optimized / DLL files
+
+# Include this
+!swagger.json # swagger from SolidFire WAC Gateway
+!SolidFireWacGateway.psm1 # (main module)
+!SolidFireWacGateway.psd1 # (module manifest)
+!SolidFireWacGateway.format.ps1xml # (formatting, if relevant)
+!README.md # (usage instructions)
+!how-to.md # (optional, quickstart or examples)
+!examples/ # (sample scripts)
+!docs/ # (optional, cmdlet documentation)
