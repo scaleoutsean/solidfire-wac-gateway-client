@@ -76,7 +76,6 @@ SYNTAX
 - [New-GroupSnapshot.md](./docs/New-GroupSnapshot.md)
 - [New-Snapshot.md](./docs/New-Snapshot.md)
 - [New-Volume.md](./docs/New-Volume.md)
-- [README.md](./docs/README.md)
 - [Remove-QoPolicy.md](./docs/Remove-QoPolicy.md)
 - [Remove-Volume.md](./docs/Remove-Volume.md)
 - [Set-QoPolicy.md](./docs/Set-QoPolicy.md)
